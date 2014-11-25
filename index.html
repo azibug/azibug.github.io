@@ -14,7 +14,7 @@ if (navigator.userAgent.match(/(iPhone|iPod|iPad);?/i) ||
     href = "/android/";
     is_android = true;
   }
-  if (location.hash) {
+
     var app_loc = "pawo://com.yy.yychat?roomid=101458";
     if (is_android) {
       var w = null;
@@ -36,8 +36,5 @@ if (navigator.userAgent.match(/(iPhone|iPod|iPad);?/i) ||
       25);
       window.location = app_loc;
     }
-  } else {
-    location.href = href;
-  }
 }
 </script>
